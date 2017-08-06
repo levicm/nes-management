@@ -54,7 +54,7 @@ class SystemInfo {
     float getVin() {
       int v = analogRead(A0);
       // faz a conversão pra volts e dobra (instalado na placa divisor de tensão por 2)
-      return ((v * 3.3) / 1023.0) * 2;
+      return ((v * 3.3) / 1023.0) * 2; // * 1.185; // fator de correção
     }
 };
 

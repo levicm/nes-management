@@ -51,7 +51,7 @@ void connectWifi() {
   DEBUG_PRINTLN2("IP: ", WiFi.localIP());
   DEBUG_PRINTLN2("Gateway: ", WiFi.gatewayIP());
   DEBUG_PRINTLN2("Mask: ", WiFi.subnetMask());
-  DEBUG_PRINTLN2("Tempo total de configuração do Wifi: ", millis() - start);
+  DEBUG_PRINTLN2("Tempo total de configuração do Wifi (ms): ", millis() - start);
 #if defined(SLEEP_MODE) 
   if (!sleepWake)
     saveIps();
